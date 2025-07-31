@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet} from 'react-native'
+import { View, Text, Image , StyleSheet} from 'react-native'
 import GradientBackground from '../components/GradientBackground'
 
 
@@ -7,6 +7,7 @@ const LandingScreen = () => {
     <GradientBackground>
     <View style={styles.wrapper}>
       <Text style={styles.title}> Welcome to The Draw</Text>
+      <Image source={require('./../assets/theDrawEdit.png')} style={styles.logo} />
     </View>
     </GradientBackground>
   )
@@ -26,6 +27,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 12,
     textAlign: 'center',
+  },
+  logo: {
+    width: 200,
+    height: 200,
+    resizeMode: 'contain',
+    marginBottom: 20,
   }
 })
 
