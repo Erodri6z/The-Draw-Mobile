@@ -8,6 +8,7 @@ const LandingScreen = () => {
     <View style={styles.wrapper}>
       <Text style={styles.title}> Welcome to The Draw</Text>
       <Image source={require('./../assets/theDrawEdit.png')} style={styles.logo} />
+      <Text style={styles.text}> When you draw three cards at random, you give the universe a chance to speak — unfiltered, untampered, and just for you.</Text>
     </View>
     </GradientBackground>
   )
@@ -33,6 +34,9 @@ const styles = StyleSheet.create({
     height: 200,
     resizeMode: 'contain',
     marginBottom: 20,
+  },
+  text:{
+    color: "white"
   }
 })
 
