@@ -1,5 +1,5 @@
 import { View, Text, Image , StyleSheet} from 'react-native'
-import GradientBackground from '../components/GradientBackground'
+import GradientBackground from '../components/GradientBackground/GradientBackground'
 
 
 const LandingScreen = () => {

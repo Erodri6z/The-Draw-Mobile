@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
+
 import { LinearGradient } from 'expo-linear-gradient';
+import styles from './Styles'
 
 const GradientBackground = ({ children }) => (
   <LinearGradient
@@ -14,11 +15,5 @@ const GradientBackground = ({ children }) => (
     {children}
   </LinearGradient>
 );
-
-const styles = StyleSheet.create({
-  background: {
-    flex: 1,
-  },
-});
 
 export default GradientBackground;
