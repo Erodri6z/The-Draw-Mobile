@@ -12,7 +12,9 @@ const styles = StyleSheet.create({
     borderRadius:10,
     margin:20,
     maxWidth:300,
-  }
+    elevation:10,
+  },
+
 })
 
 export default styles
