@@ -6,7 +6,7 @@ function DisclaimerModel({ onAccept }) {
     <Modal transparent={true} animationType="fade" visible={true}>
       <View>
         <View>
-          <Text>
+          <Text >
             DisclaimerModel
           </Text>
           <Text>
