@@ -5,7 +5,11 @@ const styles = StyleSheet.create({
     flex:1,
   },
   tabBar:{
-    backgroundColor: "rgba(53, 0, 78, 0.99)"
+    backgroundColor: "rgb(69, 0, 78)",
+    borderColor:"rgba(255, 0, 0, 0)"
+  },
+  navItem:{
+    color:"rgb(255, 255, 255)"
   }
 })
 

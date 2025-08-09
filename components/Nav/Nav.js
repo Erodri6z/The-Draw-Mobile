@@ -17,11 +17,16 @@ function TabNavigation(props) {
         headerShown: false, 
         tabBarStyle: styles.tabBar, 
         }} >
-        <Tab.Screen name="Landing" 
+        <Tab.Screen name="Landing" options={{ tabBarLabelStyle:styles.navItem }}
         children={() => <LandingWrapper {...props} />} />
-
-        {/* <Tab.Screen>
-        </Tab.Screen> */}
+        <Tab.Screen name="About" options={{ tabBarLabelStyle:styles.navItem }}
+        children={() => <LandingWrapper {...props} />} />
+        <Tab.Screen name="Login" options={{ tabBarLabelStyle:styles.navItem }}
+        children={() => <LandingWrapper {...props} />} />
+        <Tab.Screen name="Sign Up" options={{ tabBarLabelStyle:styles.navItem }}
+        children={() => <LandingWrapper {...props} />} />
+        <Tab.Screen name="Logout" options={{ tabBarLabelStyle:styles.navItem }}
+        children={() => <LandingWrapper {...props} />} />
       </Tab.Navigator>
     </View>
   )
