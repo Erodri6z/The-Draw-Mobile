@@ -1,17 +1,13 @@
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs' 
-import Landing from './screens/LandingScreen/LandingScreen';
-
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import Landing from './screens/LandingScreen/LandingScreen'
+import TabNavigation from './components/Nav/Nav'
 
 const Stack = createNativeStackNavigator()
-const Tab = createBottomTabNavigator()
-
 
 function LandingWrapper(props) {
-  return <Landing user={props.user} />;
+  return <Landing user={props.user} />
 }
-
 
 function Navigation(props) {
   return (
@@ -24,17 +20,17 @@ function Navigation(props) {
   )
 }
 
-function TabNavigation(props) {
-  return (
-    <Tab.Navigator screenOptions={{ headerShown: false }} >
-      <Tab.Screen name="Landing" 
-      children={() => <LandingWrapper {...props} />} />
+// function TabNavigation(props) {
+//   return (
+//     <Tab.Navigator screenOptions={{ headerShown: false }} >
+//       <Tab.Screen name="Landing" 
+//       children={() => <LandingWrapper {...props} />} />
 
-      {/* <Tab.Screen>
-      </Tab.Screen> */}
-    </Tab.Navigator>
-  )
-}
+//       {/* <Tab.Screen>
+//       </Tab.Screen> */}
+//     </Tab.Navigator>
+//   )
+// }
 
 
 
