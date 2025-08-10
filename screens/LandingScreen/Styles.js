@@ -17,11 +17,21 @@ const styles = StyleSheet.create({
   logo: {
     width: 200,
     height: 200,
-    resizeMode: 'contain',
-    marginBottom: 20,
+    shadowColor: 'rgb(255, 255, 255)',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 1,
+    shadowRadius: 10, 
+    elevation: 8,
   },
   text:{
-    color: "white"
+    color: "white",
+    textAlign:"center"
+  },
+  button:{
+    backgroundColor: "rgb(234, 0, 255)",   padding: 10,
+    margin: 20,
+    borderRadius: 5,
+    color: "rgb(255, 255, 255)"
   }
 });
 

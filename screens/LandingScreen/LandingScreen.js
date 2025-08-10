@@ -1,4 +1,4 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, TouchableOpacity } from 'react-native'
 import DisclaimerModal from '../../components/Disclaimer/Disclaimer'
 import GradientBackground from '../../components/GradientBackground/GradientBackground'
 import styles from './Styles'
@@ -19,6 +19,9 @@ const LandingScreen = () => {
         <Text style={styles.title}> Welcome to The Draw</Text>
         <Image source={require(`../../assets/theDrawEdit.png`)} style={styles.logo} />
         <Text style={styles.text}> When you draw three cards at random, you give the universe a chance to speak. Unfiltered, untampered, and just for you.</Text>
+          <TouchableOpacity style={styles.button}>
+            <Text style={styles.buttonText}>Lets Get Started</Text>
+          </TouchableOpacity>
       </View>
     )}
     </View>

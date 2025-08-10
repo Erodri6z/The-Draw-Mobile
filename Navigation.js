@@ -20,18 +20,6 @@ function Navigation(props) {
   )
 }
 
-// function TabNavigation(props) {
-//   return (
-//     <Tab.Navigator screenOptions={{ headerShown: false }} >
-//       <Tab.Screen name="Landing" 
-//       children={() => <LandingWrapper {...props} />} />
-
-//       {/* <Tab.Screen>
-//       </Tab.Screen> */}
-//     </Tab.Navigator>
-//   )
-// }
-
 
 
 export default Navigation 
