@@ -3,11 +3,10 @@ import { ScrollView, Text, View } from "react-native-gesture-handler"
 
 const About = () => {
   return (
-    <ScrollView>
+    <View>
       <View>
         <Text>The Draw</Text>
       </View>
-
       <View>
         <Text>
           What are tarot cards
@@ -16,7 +15,6 @@ const About = () => {
           Section One 
         </Text>
       </View>
-
       <View>
         <Text>
           Explination
@@ -25,7 +23,6 @@ const About = () => {
           Section 2
         </Text>
       </View>
-
       <View>
         <Text>
           There is no rules, it's just an invitation
@@ -34,7 +31,6 @@ const About = () => {
           Section 3
         </Text>
       </View>
-
       <View>
         <Text>
           Best Practice :
@@ -43,8 +39,7 @@ const About = () => {
           Section 4
         </Text>
       </View>
-
-    </ScrollView>
+    </View>
   )
 }
 
