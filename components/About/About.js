@@ -1,7 +1,7 @@
-import React from "react"
-import { ScrollView, Text, View } from "react-native-gesture-handler"
 
-const About = () => {
+import { Text, View } from "react-native"
+
+function About() {
   return (
     <View>
       <View>

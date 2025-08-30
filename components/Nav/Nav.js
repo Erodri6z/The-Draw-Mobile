@@ -1,5 +1,6 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs' 
 import Landing from '../../screens/LandingScreen/LandingScreen';
+import AboutScreen from '../../screens/About/AboutScreen';
 import { View } from 'react-native'
 import styles from './Styles'
 const Tab = createBottomTabNavigator()
@@ -9,6 +10,7 @@ const Tab = createBottomTabNavigator()
 function LandingWrapper(props) {
   return <Landing user={props.user} />;
 }
+
 
 function TabNavigation(props) {
   return (
@@ -20,7 +22,7 @@ function TabNavigation(props) {
         <Tab.Screen name="Landing" options={{ tabBarLabelStyle:styles.navItem }}
         children={() => <LandingWrapper {...props} />} />
         <Tab.Screen name="About" options={{ tabBarLabelStyle:styles.navItem }}
-        children={() => <LandingWrapper {...props} />} />
+        children={() => <AboutScreen />} />
         <Tab.Screen name="Login" options={{ tabBarLabelStyle:styles.navItem }}
         children={() => <LandingWrapper {...props} />} />
         <Tab.Screen name="Sign Up" options={{ tabBarLabelStyle:styles.navItem }}
