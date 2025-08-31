@@ -4,39 +4,39 @@ import { ScrollView } from "react-native-gesture-handler"
 
 function About() {
   return (
-    <ScrollView>
-      <View >
-        <Text>The Draw</Text>
+    <ScrollView style={styles.about}>
+      <View style={styles.section}>
+        <Text style={styles.mainTitle}>The Draw</Text>
       </View>
-      <View>
-        <Text>
+      <View style={styles.section}>
+        <Text style={styles.title}>
           What are tarot cards
         </Text>
-        <Text>
+        <Text style={styles.text}>
           Section One 
         </Text>
       </View>
-      <View>
-        <Text>
+      <View style={styles.section}>
+        <Text style={styles.title}>
           Explination
         </Text>
-        <Text>
+        <Text style={styles.text}>
           Section 2
         </Text>
       </View>
-      <View>
-        <Text>
+      <View style={styles.section}>
+        <Text style={styles.title}>
           There is no rules, it's just an invitation
         </Text>
-        <Text>
+        <Text style={styles.text}>
           Section 3
         </Text>
       </View>
-      <View>
-        <Text>
+      <View style={styles.section}>
+        <Text style={styles.title}>
           Best Practice :
         </Text>
-        <Text>
+        <Text style={styles.text}>
           Section 4
         </Text>
       </View>
