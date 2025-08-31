@@ -1,10 +1,11 @@
 
 import { Text, View } from "react-native"
+import { ScrollView } from "react-native-gesture-handler"
 
 function About() {
   return (
-    <View>
-      <View>
+    <ScrollView>
+      <View >
         <Text>The Draw</Text>
       </View>
       <View>
@@ -39,7 +40,7 @@ function About() {
           Section 4
         </Text>
       </View>
-    </View>
+    </ScrollView>
   )
 }
 
